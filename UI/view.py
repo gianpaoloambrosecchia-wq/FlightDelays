@@ -46,11 +46,14 @@ class View(ft.UserControl):
         self._txtInNtratteMax = ft.TextField(label="Numero tratte max")
         self._btnCercaItinerario = ft.ElevatedButton(text="Cerca Itinerario",
                                                      on_click = self._controller.handleCerca)
+        self._btnTestConnessione = ft.ElevatedButton(text="Test Connessione",
+                                                     on_click=self._controller.handleTestConnessione)
 
         row3 = ft.Row([
             ft.Container(self._ddAeroportoA, width=250),
             ft.Container(self._txtInNtratteMax, width=250),
             ft.Container(self._btnCercaItinerario, width=250),
+            ft.Container(self._btnTestConnessione, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
 
 
